@@ -1,0 +1,19 @@
+Proxy tester
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+python -m pip install pip --upgrade
+
+pip install -r requrements.txt
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+python manage.py runserver
+
+Browser
+
+http://localhost:8000/admin
